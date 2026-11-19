@@ -133,7 +133,7 @@ def detect_cyclones(dt, cyc_minprominence, sensitivity_analysis=False, test=Fals
             cycmeta data about each cyclone: (1) latitude and (2) longitude of centre, (3) minimum SLP, (4) SLP at the outermost contour, and (5) cyclone size. Note that nn = 1000 (Maximum number of cyclones to be detected)
     """
 
-    path_features = "/g/data/xv83/as3189/vicwaci/data/weather_features/cyclones_500hpa"
+    path_features = "/g/data/xv83/as3189/vicwaci/data/mesoscale_features/cyclones_500hpa"
     outfile = (
         f"{path_features}/ea.ans.{dt.strftime('%Y%m')}.500.cycmask_min{cyc_minprominence}gpm.nc"
     )

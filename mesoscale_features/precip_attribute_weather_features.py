@@ -18,7 +18,7 @@ Example
 ```bash
 module use /g/data/xp65/public/modules
 module load conda/analysis3-25.11
-python /g/data/xv83/as3189/vicwaci/precip_attribute_weather_features.py -m1 ${m1} -y1 ${y1} -m2 ${m2} -y2 ${y2}
+python /g/data/xv83/as3189/vicwaci/precip_attribute_mesoscale_features.py -m1 ${m1} -y1 ${y1} -m2 ${m2} -y2 ${y2}
 ```
 """
 
@@ -274,7 +274,7 @@ if __name__ == "__main__":
     m1, m2 = args.m1, args.m2
 
     # Set paths and parameters
-    path_features = "/g/data/xv83/as3189/vicwaci/data/weather_features"
+    path_features = "/g/data/xv83/as3189/vicwaci/data/mesoscale_features"
     path_output = "/g/data/xv83/as3189/vicwaci/data/precip_attribution"
 
     min_precip_mm = 0.1  # Minimum precipitation (mm) threshold
